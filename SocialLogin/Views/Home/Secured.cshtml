@@ -1,0 +1,20 @@
+﻿@using SocialLogin.Models
+@model AuthenticatedUser
+@{
+    ViewBag.Title = "Secured";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Secured Page</h2>
+<div>
+    <table>
+        <tr><td>Photo:</td><td><img src="@Model.Photo"/></td></tr>
+        <tr><td>Email:</td><td><b>@Model.Email</b></td></tr>
+
+        <tr><td>First Name:</td><td><b>@Model.FirstName</b></td></tr>
+
+        <tr><td>Last Name:</td><td><b>@Model.LastName</b></td></tr>
+
+    </table>
+</div>
+
